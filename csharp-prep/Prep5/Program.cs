@@ -48,6 +48,6 @@ class Program
 
     static void DisplayResult(string first, string last, int number, int squaredNum)
     {
-        Console.WriteLine($"Your name is {first} {last}, your favorite number is {number}, and the number squared is {squaredNum}.");
+        Console.WriteLine($"Your name is {first} {last}, your favorite number is {number}, and that number squared is {squaredNum}.");
     }
 }
