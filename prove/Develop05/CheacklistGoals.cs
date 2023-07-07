@@ -14,8 +14,7 @@ namespace Develop05
     private int _count;
 
     // Constructors
-    public ChecklistGoal(string type, string name, string description, int points, int numberTimes, int bonusPoints)
-        : base(type, name, description, points)
+    public ChecklistGoal(string type, string name, string description, int points, int numberTimes, int bonusPoints) : base(type, name, description, points)
     {
         _numberTimes = numberTimes;
         _bonusPoints = bonusPoints;
@@ -23,8 +22,7 @@ namespace Develop05
         _count = 0;
     }
 
-    public ChecklistGoal(string type, string name, string description, int points, bool isCompleted, int numberTimes, int bonusPoints, int count)
-        : base(type, name, description, points)
+    public ChecklistGoal(string type, string name, string description, int points, bool isCompleted, int numberTimes, int bonusPoints, int count) : base(type, name, description, points)
     {
         _numberTimes = numberTimes;
         _bonusPoints = bonusPoints;
@@ -57,7 +55,8 @@ namespace Develop05
         if (_count == _numberTimes)
         {
             _isCompleted = true;
-            Console.WriteLine($"Congratulations! You have earned {points + _bonusPoints} points!");
+            points = _bonusPoints + points;
+            Console.WriteLine($"Congratulations! You have earned {points} points!");
         }
         else
         {

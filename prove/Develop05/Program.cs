@@ -4,10 +4,10 @@ using System.IO;
 using System.Globalization;
 
 namespace Develop05{
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
             // Use to convert text to title case
             TextInfo textInfo = new CultureInfo("en-US", false).TextInfo;
 
