@@ -9,7 +9,7 @@ public class ReceptionEvent : Event
         get { return _rsvpEmail; }
         set { _rsvpEmail = value; }
     }
-    public ReceptionEvent(string title, string description, DateTime date, TimeSpan time, Address address, string rsvpEmail) 
+    public ReceptionEvent(string title, string description, string date, string time, Address address, string rsvpEmail) 
         : base(title, description, date, time, address)
     {
         _rsvpEmail = rsvpEmail;

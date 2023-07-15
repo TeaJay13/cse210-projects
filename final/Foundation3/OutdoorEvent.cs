@@ -10,7 +10,7 @@ public class OutdoorEvent : Event
         get { return _weather; }
         set { _weather = value; }
     }
-    public OutdoorEvent(string title, string description, DateTime date, TimeSpan time, Address address, string weather) 
+    public OutdoorEvent(string title, string description, string date, string time, Address address, string weather) 
         : base(title, description, date, time, address)
     {
         _weather = weather;

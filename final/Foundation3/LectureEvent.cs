@@ -18,7 +18,7 @@ public class LectureEvent : Event
         set { _capacity = value; }
     }
 
-    public LectureEvent(string title, string description, DateTime date, TimeSpan time, Address address, string speaker, int capacity) 
+    public LectureEvent(string title, string description, string date, string time, Address address, string speaker, int capacity) 
         : base(title, description, date, time, address)
     {
         _speaker = speaker;

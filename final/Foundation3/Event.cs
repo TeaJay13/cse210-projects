@@ -5,41 +5,41 @@ public class Event
 {
     private string _title;
     private string _description;
-    private DateTime _date;
-    private TimeSpan _time;
+    private string _date;
+    private string _time;
     private Address _address;
 
-    public string Title
+    public string title
     {
         get { return _title; }
         set { _title = value; }
     }
 
-    public string Description
+    public string description
     {
         get { return _description; }
         set { _description = value; }
     }
 
-    public DateTime Date
+    public string date
     {
         get { return _date; }
         set { _date = value; }
     }
 
-    public TimeSpan Time
+    public string time
     {
         get { return _time; }
         set { _time = value; }
     }
 
-    public Address Address
+    public Address address
     {
         get { return _address; }
         set { _address = value; }
     }
 
-    public Event(string title, string description, DateTime date, TimeSpan time, Address address)
+    public Event(string title, string description, string date, string time, Address address)
     {
         _title = title;
         _description = description;
