@@ -7,25 +7,25 @@ public class Order
     private Customer _customer;
     private double _shippingCost;
 
-    // Constructor
+
     public Order(Customer customer)
     {
         _products = new List<Product>();
         _customer = customer;
-      _shippingCost = 0.0; // Initialize the shipping cost variable to 0.0
+      _shippingCost = 0.0;
 
-        if (_customer.isInUSA()) // Check if the customer is in the USA
+        if (_customer.isInUSA())
         {
-            _shippingCost = 5.0; // Set the shipping cost to $5.0 if the customer is in the USA
+            _shippingCost = 5.0;
         }
         else
         {
-            _shippingCost = 35.0; // Set the shipping cost to $35.0 if the customer is not in the USA
+            _shippingCost = 35.0;
         }
 
     }
 
-    // Methods
+ 
     public void AddProduct(Product product)
     {
         _products.Add(product);

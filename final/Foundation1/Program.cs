@@ -39,7 +39,7 @@ public class Program
 
         List<Video> videos = new List<Video>{ video1, video2, video3};
 
-        foreach (var video in videos)
+        foreach (Video video in videos)
         {
             Console.WriteLine($"Title:{video.title}, Author:{video.author}, Length:{video.length}, # of Comments: {video.GetNumberOfComments()}");
             Console.WriteLine("Comments:");
